@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-nav="top">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four Dragons Inc. Go — Inclusive Hiring &amp; Family Culture</title>
+<meta name="description" content="Four Dragons Inc. Go — company information, inclusive hiring, character-first standards, and a workplace built around dignity, creativity, innovation, and family.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/company_logo.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/company_logo.png">
+<link rel="apple-touch-icon" href="assets/company_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="mobile-bar">
+  <button class="icon-btn" id="drawerToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav">
+    <span class="burger"><span></span><span></span><span></span></span>
+  </button>
+  <a href="#hero" class="mobile-brand">
+    <img src="assets/app_icon.png" alt="" class="mobile-brand-icon">
+    <span>FOUR DRAGONS</span>
+  </a>
+  <button class="icon-btn" id="themeToggleMobile" aria-label="Toggle light and dark theme">
+    <svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+  </button>
+</header>
+
+<div class="scrim" id="scrim"></div>
+
+<nav class="site-nav" id="siteNav" aria-label="Primary">
+  <div class="nav-head">
+    <a href="#hero" class="brand">
+      <img src="assets/app_icon.png" alt="Four Dragons Inc. Go emblem" class="brand-icon">
+      <span class="brand-text">
+        <strong>FOUR&nbsp;DRAGONS</strong>
+        <em>演劇</em>
+      </span>
+    </a>
+    <button class="icon-btn nav-close" id="navClose" aria-label="Close navigation">✕</button>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#hero" data-label="00" data-i18n-key="navHome"><span class="n">00</span>Home</a></li>
+    <li><a href="#hiring" data-label="01" data-i18n-key="navHiring"><span class="n">01</span>Hiring Process</a></li>
+    <li><a href="#hiring-standards" data-label="02" data-i18n-key="navHiringStandards"><span class="n">02</span>Hiring Standards</a></li>
+  </ul>
+
+  <div class="nav-foot">
+    <div class="settings-block">
+      <span class="settings-label" data-i18n-key="themeLabel">Theme</span>
+      <div class="segmented" role="radiogroup" aria-label="Theme">
+        <button type="button" data-theme-choice="dark" class="seg-btn" role="radio" aria-checked="true" data-i18n-key="themeDark">Dark</button>
+        <button type="button" data-theme-choice="light" class="seg-btn" role="radio" aria-checked="false" data-i18n-key="themeLight">Light</button>
+      </div>
+    </div>
+    <div class="settings-block">
+      <span class="settings-label" data-i18n-key="navLabel">Navbar position</span>
+      <div class="segmented" role="radiogroup" aria-label="Navigation position">
+        <button type="button" data-nav-choice="top" class="seg-btn" role="radio" aria-checked="true" data-i18n-key="navTop">Top</button>
+        <button type="button" data-nav-choice="left" class="seg-btn" role="radio" aria-checked="false" data-i18n-key="navLeft">Left</button>
+        <button type="button" data-nav-choice="right" class="seg-btn" role="radio" aria-checked="false" data-i18n-key="navRight">Right</button>
+      </div>
+    </div>
+    <div class="settings-block">
+      <span class="settings-label" data-i18n-key="langLabel">Language</span>
+      <button class="lang-switch" id="langSwitch" type="button" role="switch" aria-checked="false" aria-label="Switch language">
+        <span class="lang-switch-track">
+          <span class="lang-switch-thumb"></span>
+        </span>
+        <span class="lang-switch-copy">
+          <span class="lang-switch-option active" data-lang="en">EN</span>
+          <span class="lang-switch-option" data-lang="ja">日本語</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="hero" id="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <img src="assets/app_icon.png" alt="Four Dragons Inc. Go emblem — dual dragon heads circling a blue and red numeral four" class="hero-emblem">
+      <p class="eyebrow" data-i18n-key="heroEyebrow">Tokyo, Japan · Main Headquarters &amp; Decentralized Worldwide</p>
+      <h1 data-i18n-key="heroTitle">Four Dragons Inc. Go <span class="jp">(演劇)</span></h1>
+      <p class="hero-sub" data-i18n-key="heroSub">An inclusive, character-first entertainment family where willingness, curiosity, passion, and human dignity come before every resume.</p>
+      <p class="hero-founder" data-i18n-key="heroFounder">Christopher Lee Cajes — Founder, CEO &amp; Chairman</p>
+      <div class="hero-actions">
+        <a href="#hiring" class="btn btn-ghost" data-i18n-key="heroSecondary">Our Hiring Process</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="creations" hidden>
+    <p class="vol" data-i18n-key="creationsVol">Our Work</p>
+    <h2 data-i18n-key="creationsTitle">What we make</h2>
+    <p class="section-lede" data-i18n-key="creationsLead">Any entertainment and creativity products — from the heart of every member of the family as creators.</p>
+
+    <ul class="product-list">
+      <li><span class="name">2D Video Games</span></li>
+      <li><span class="name">3D Video Games</span></li>
+      <li><span class="name">Cartoons</span></li>
+      <li><span class="name">Anime</span></li>
+      <li><span class="name">Educational Shows</span></li>
+      <li><span class="name">Art Shows</span></li>
+      <li><span class="name">Music Shows</span></li>
+      <li><span class="name">Dance Shows</span></li>
+      <li><span class="name">Theater &amp; Stage Plays</span></li>
+      <li><span class="name">Painting &amp; Drawing Shows</span></li>
+      <li><span class="name">Sculpture Shows</span></li>
+      <li><span class="name">Classical Music Shows</span></li>
+      <li><span class="name">Jazz Music Shows</span></li>
+      <li><span class="name">Folk Music Shows</span></li>
+      <li><span class="name">Orchestra &amp; Symphony Shows</span></li>
+      <li><span class="name">Choir &amp; Vocal Shows</span></li>
+      <li><span class="name">Music Education Shows</span></li>
+      <li><span class="name">Art History Shows</span></li>
+      <li><span class="name">Craft &amp; DIY Shows</span></li>
+      <li><span class="name">Science &amp; Nature Docs</span></li>
+      <li><span class="name">Family Game Shows</span></li>
+      <li><span class="name">Animated Shorts</span></li>
+      <li><span class="name">Language Learning Shows</span></li>
+    </ul>
+
+    <p class="section-lede" style="margin-top:2rem;"><strong>Audience:</strong> All creations are designed exclusively for minors — children through teenagers. Content is delivered through television and television-connected platforms only. The use of personal gadgets, mobile devices, or handheld screens by minors is not permitted for Four Dragons content. Every creation is crafted to be age-appropriate, safe, and enriching for young audiences.</p>
+  </section>
+
+  <section class="section alt" id="standards" hidden>
+    <p class="vol" data-i18n-key="standardsVol">Product Standards</p>
+    <h2 data-i18n-key="standardsTitle">The line we don't cross</h2>
+    <p class="section-lede" data-i18n-key="standardsLead">All Four Dragons products must uplift, inspire, and bring people together. The following themes are never permitted — across games, anime, film, music or books:</p>
+
+    <ul class="limitations-list">
+      <li data-i18n-key="standard1">Brutal or excessively violent content and gore</li>
+      <li data-i18n-key="standard2">Horror, scary, or disturbing imagery</li>
+      <li data-i18n-key="standard3">Inappropriate or mature themes</li>
+      <li data-i18n-key="standard4">Anything that creates a negative emotional impact</li>
+      <li data-i18n-key="standard5">Profanity, vulgar language, or crude humor</li>
+      <li data-i18n-key="standard6">Sexual content or suggestive material</li>
+      <li data-i18n-key="standard7">Substance abuse or glorification of drugs and alcohol</li>
+      <li data-i18n-key="standard8">Discrimination, hate speech, or prejudice-based messaging</li>
+      <li data-i18n-key="standard10">Manipulative, exploitative, or fear-based storytelling</li>
+    </ul>
+
+    <p class="section-lede" data-i18n-key="standardsLead2">Instead, every project strives to be friendly, hopeful, and positive:</p>
+
+    <ul class="standards-list">
+      <li data-i18n-key="standardsList1">+ Friendly &amp; Welcoming</li>
+      <li data-i18n-key="standardsList2">+ Inspirational &amp; Hopeful</li>
+      <li data-i18n-key="standardsList3">+ Positive &amp; Joyful</li>
+      <li data-i18n-key="standardsList4">+ Kind &amp; Compassionate</li>
+      <li data-i18n-key="standardsList5">+ Courageous &amp; Adventurous</li>
+    </ul>
+  </section>
+
+  <section class="section alt" id="hiring">
+    <p class="vol" data-i18n-key="hiringVol">Hiring Process</p>
+    <h2 data-i18n-key="hiringTitle">Join the family through a human conversation</h2>
+    <p class="section-lede" data-i18n-key="hiringLead">Four Dragons welcomes anyone who is willing, interested, and excited to join the family. The process is simple, respectful, and built to meet people where they are.</p>
+
+    <div class="hiring-grid">
+      <article class="hiring-card">
+        <span class="hiring-index">01</span>
+        <h3 data-i18n-key="hiringStep1Title">Submit a resume</h3>
+        <p data-i18n-key="hiringStep1Text">A resume is required for every applicant. If you cannot create one, you are still welcome. We will help you prepare it without judgment.</p>
+      </article>
+      <article class="hiring-card">
+        <span class="hiring-index">02</span>
+        <h3 data-i18n-key="hiringStep2Title">Say hello</h3>
+        <p data-i18n-key="hiringStep2Text">The interview is 100% informal. Say hi and hello, tell your story politely and friendly, and be yourself. Skills, knowledge, achievements, education, life status, and background do not decide your worth.</p>
+      </article>
+      <article class="hiring-card">
+        <span class="hiring-index">03</span>
+        <h3 data-i18n-key="hiringStep4Title">No skill assessments</h3>
+        <p data-i18n-key="hiringStep4Text">No skills assessment, test, examination, assignment, or practical demonstration is required at any stage of hiring.</p>
+      </article>
+    </div>
+
+    <p class="section-lede" data-i18n-key="learningNote">Not everything can be taught in schools or universities. Character, attitude, willingness, and humanity are lived and learned through life.</p>
+
+    <blockquote class="statement" data-i18n-key="hiringQuote">“We should have a heart. These people have passions and purpose in life, especially when building a true family and a real impact of creativity and innovation to the world.”</blockquote>
+  </section>
+
+  <section class="section" id="hiring-standards">
+    <p class="vol" data-i18n-key="hiringStandardsVol">Hiring Standards</p>
+    <h2 data-i18n-key="hiringStandardsTitle">People before profiles</h2>
+    <p class="section-lede" data-i18n-key="hiringStandardsLead">Hiring is an act of trust. We protect each person's dignity, passions, career, and future while looking for the character that helps a family grow together.</p>
+
+    <div class="hiring-standards">
+      <article class="standard-card">
+        <h3 data-i18n-key="hiringWelcomeTitle">We welcome</h3>
+        <ul>
+          <li data-i18n-key="hiringWelcome1">Anyone who is willing, interested, and excited to join the family</li>
+          <li data-i18n-key="hiringWelcome2">Applicants who need support creating a resume</li>
+          <li data-i18n-key="hiringWelcome3">People of every skill level, achievement, education, and life status</li>
+          <li data-i18n-key="hiringWelcome4">Polite, friendly storytellers who bring curiosity and heart</li>
+        </ul>
+      </article>
+      <article class="standard-card">
+        <h3 data-i18n-key="hiringRejectTitle">We never reject because of</h3>
+        <ul>
+          <li data-i18n-key="hiringReject1">A lack of a skill, qualification, achievement, or experience</li>
+          <li data-i18n-key="hiringReject2">A person's physical looks, personal status, or life circumstances</li>
+          <li data-i18n-key="hiringReject3">Anything that would destroy a person's career, passions, or future</li>
+        </ul>
+      </article>
+      <article class="standard-card">
+        <h3 data-i18n-key="hiringManagerTitle">Hiring manager policy</h3>
+        <p data-i18n-key="hiringManagerText">The founder's current policy does not appoint Filipino applicants as hiring managers, based on the founder's experiences with harmful hiring practices in the Philippines. Filipino applicants are welcome to join the family in every other role.</p>
+      </article>
+    </div>
+
+    <div class="script-block">
+      <h3 data-i18n-key="scriptTitle">Scripts we never use</h3>
+      <p class="section-lede" data-i18n-key="scriptLead">The following rejection scripts and email subjects represent inappropriate and unprofessional hiring communication. They are not part of Four Dragons hiring communication and show language the founder will not tolerate.</p>
+      <ul class="script-list">
+        <li data-i18n-key="script1">“After careful review of your qualifications, we regret to inform you that we are moving forward with other candidates whose profiles more closely align with the current requirements of this role.”</li>
+        <li data-i18n-key="script2">“While we were highly impressed by your background, we have decided to move forward with another candidate who possesses more specialized experience in [mention specific skill, e.g., advanced developer].”</li>
+        <li data-i18n-key="script3">“Unfortunately, we are not able to offer you an interview for the [Position Title] role.”</li>
+        <li data-i18n-key="script4">Email subject: “Not Selected”</li>
+      </ul>
+      <p class="script-note" data-i18n-key="script2Note">This script's true meaning is unprofessionalism. It is unreasonable to reduce a person to a narrow comparison of specialized experience.</p>
+      <p class="reframe" data-i18n-key="scriptNote">The word “unfortunately” is not part of our hiring dictionary and will not be tolerated in hiring.</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="constitution" hidden>
+    <p class="vol" data-i18n-key="constitutionVol">Corporate Constitution</p>
+    <h2 data-i18n-key="constitutionTitle">These almost never change.</h2>
+    <ol class="articles">
+      <li><h3 data-i18n-key="article1Title">Every person deserves dignity.</h3></li>
+      <li><h3 data-i18n-key="article2Title">Good human beings come before great talent.</h3><p data-i18n-key="article2Text">Character outweighs skill. Skills can be learned. Character must be lived.</p></li>
+      <li><h3 data-i18n-key="article3Title">Zero corruption.</h3><p data-i18n-key="article3Text">No bribery. No abuse of authority. No favoritism. No exploitation.</p></li>
+      <li><h3 data-i18n-key="article4Title">The company exists to improve people's lives.</h3><p data-i18n-key="article4Text">Profit sustains the mission — it does not replace it.</p></li>
+      <li><h3 data-i18n-key="article5Title">Everyone is a creator.</h3><p data-i18n-key="article5Text">Teams and individuals may create. Original pitches are welcomed. Passion projects encouraged.</p></li>
+      <li><h3 data-i18n-key="article6Title">No layoffs for financial optimization alone.</h3><p data-i18n-key="article6Text">Relocate. Retrain. Create opportunities. The Founder protects his children's jobs, dreams, and futures — first, always.</p></li>
+      <li><h3 data-i18n-key="article7Title">Anyone may leave peacefully to chase their own dreams.</h3><p data-i18n-key="article7Text">Entrepreneurship is celebrated. Leaving to build your own venture is a success — not betrayal. Former members stay family.</p></li>
+      <li><h3 data-i18n-key="article8Title">Treat everyone equally.</h3><p data-i18n-key="article8Text">Titles do not determine worth. Everyone deserves equal human respect.</p></li>
+      <li><h3 data-i18n-key="article9Title">No forced participation.</h3><p class="jp-quote" data-i18n-key="article9Quote">“Walang sapilitan.”</p><p data-i18n-key="article9Text">Real teamwork comes from willingness — not coercion.</p></li>
+      <li><h3 data-i18n-key="article10Title">Continuous learning.</h3><p data-i18n-key="article10Text">Everyone remains a student. Everyone remains a teacher.</p></li>
+    </ol>
+  </section>
+
+  <section class="section" id="culture" hidden>
+    <p class="vol" data-i18n-key="cultureVol">Culture Book</p>
+    <h2 data-i18n-key="cultureTitle">Our Values</h2>
+    <ul class="chip-list">
+      <li data-i18n-key="valueKindness">Kindness</li><li data-i18n-key="valueRespect">Respect</li><li data-i18n-key="valueHonesty">Honesty</li><li data-i18n-key="valuePassion">Passion</li><li data-i18n-key="valueFamily">Family</li>
+      <li data-i18n-key="valueHumility">Humility</li><li data-i18n-key="valueCreativity">Creativity</li><li data-i18n-key="valueCourage">Courage</li><li data-i18n-key="valueResponsibility">Responsibility</li>
+      <li data-i18n-key="valueCompassion">Compassion</li><li data-i18n-key="valueCuriosity">Curiosity</li><li data-i18n-key="valueGratitude">Gratitude</li><li data-i18n-key="valueOptimism">Optimism</li><li data-i18n-key="valueService">Service</li>
+    </ul>
+
+    <div class="reject-block">
+      <h3 data-i18n-key="rejectTitle">We Reject</h3>
+      <ul class="reject-list">
+        <li data-i18n-key="rejectCorruption">Corruption</li><li data-i18n-key="rejectBullying">Bullying</li><li data-i18n-key="rejectHarassment">Harassment</li><li data-i18n-key="rejectDiscrimination">Discrimination</li><li data-i18n-key="rejectRacism">Racism</li>
+        <li data-i18n-key="rejectManipulation">Manipulation</li><li data-i18n-key="rejectCruelty">Cruelty</li><li data-i18n-key="rejectAbuse">Abuse</li><li data-i18n-key="rejectPolitics">Workplace politics</li><li data-i18n-key="rejectCongress">Congress</li>
+        <li data-i18n-key="rejectToxicCompetition">Toxic competition</li><li data-i18n-key="rejectFearMgmt">Fear-based management</li><li data-i18n-key="rejectToxicWork">Toxic work culture</li><li data-i18n-key="rejectScam">Scam</li>
+      </ul>
+      <p class="reframe" data-i18n-key="rejectReframe1">The word <em>"Micromanage" / "Micromanagement"</em> doesn't exist — not in this dictionary, not here.</p><br />
+      <p class="reframe" data-i18n-key="rejectReframe2"><strong>"We speak respectfully. We don't criticize people. We lift each other up."</strong></p>
+      <blockquote class="statement small" data-i18n-key="rejectQuote">“Four Dragons has zero tolerance for toxic work culture. If the environment stops feeling safe, the Founder will act — and protect his family.”</blockquote>
+    </div>
+  </section>
+
+  <section class="section alt" id="philosophy" hidden>
+    <p class="vol" data-i18n-key="philosophyVol">Creative Philosophy</p>
+    <h2 data-i18n-key="philosophyTitle">No deadlines. Just great work.</h2>
+
+    <p class="section-lede" data-i18n-key="philosophyLead1">The best work comes when creators are free to explore, iterate, and let ideas breathe — not when a calendar is breathing down their neck.</p>
+
+    <ul class="chip-list">
+      <li data-i18n-key="philosophyLine1">"I'm not chasing the clock on this."</li>
+      <li data-i18n-key="philosophyLine2">"I'm focused on the work, not the pressure of the date."</li>
+      <li data-i18n-key="philosophyLine3">"I'm staying ahead of the game so the deadline isn't an issue."</li>
+    </ul>
+
+    <p class="section-lede" data-i18n-key="philosophyLead2">When people aren't stressed about arbitrary timelines, they take risks, experiment, and produce work they're proud of. Rushing creates mediocrity; patience creates masterpieces.</p>
+
+    <h3 class="subhead" data-i18n-key="philosophySubhead">A living proof — Leonardo da Vinci</h3>
+
+    <p data-i18n-key="philosophyPara1">Leonardo kept refining the <em>Mona Lisa</em> for 16 years — from 1503 until his death in 1519 — never delivering it, because it wasn't finished.</p>
+    <p data-i18n-key="philosophyPara2">One painting. Nearly two decades. No deadline over his head. The result: the most famous painting on Earth — not because he rushed, but because he refused to settle.</p>
+
+    <blockquote class="statement" data-i18n-key="philosophyQuote">He didn't build something to meet a date. He built something to be extraordinary.</blockquote>
+
+    <p data-i18n-key="philosophyPara3">That's the energy Four Dragons was founded on. Our games, anime, films, music, and books deserve that same patience. We'd rather take our time and ship something people love than chase a calendar and ship something forgettable.</p>
+  </section>
+
+  <footer class="site-footer">
+    <img src="assets/app_icon.png" alt="Four Dragons Inc. Go emblem" class="footer-icon">
+    <p data-i18n-key="footerText">Four Dragons Inc. Go (演劇) — Tokyo, Japan &amp; Decentralized Worldwide</p>
+    <p class="footer-sub" data-i18n-key="footerSub">Christopher Lee Cajes · Founder, CEO &amp; Chairman</p>
+    <p class="footer-copy">© <span id="year"></span> Four Dragons Inc. Go — All rights reserved.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
